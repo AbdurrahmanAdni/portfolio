@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+.navbar-body{
+    display: flex;
+    font-size: 16px;
+    padding: 10px 30px;
+    background-color: rgb(34, 34, 34);
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.navbar-leftside a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-leftside span{
+    font-size: 24px;
+}
+
+.logo-1{
+    color: white;
+}
+
+.logo-2{
+    font-weight: bold;
+    color: rgb(4, 139, 139);
+}
+
+/*.dropdown-button #hidden{
+    display: none;
+}*/
+
+.navbar-rightside{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.dropdown-button{
+    display: none;
+}
+
+.link-container {
+    display: flex;
+      
+    transition: all 0.5s ease-in;
+    opacity: 1;
+}
+
+.link-container button{
+    display: none;
+}
+
+.link-container div a{
+    color: white;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    border-top: 1px solid rgb(34, 34, 34);
+}
+
+.link-container div a:hover{
+    color: rgb(4, 139, 139);
+}
+
+.link-container div a:active, .link-container div a:focus{
+    border-top: 1px solid orange;
+}
+
+/*.link-container div button{
+    display: none;
+}
+
+.link-container div{
+    display: flex;
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.link-container div div a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    height: 80px;
+}
+
+.link-container div div a:hover{
+    color: rgb(4, 139, 139);
+}
+
+.link-container div div a:active, .link-container div div a:focus{
+    border-top: 1px solid orange;
+}*/
+
+@media only screen and (max-width: 595px) {
+
+    /*.navbar-body{
+        display: inline-block;
+    }*/
+
+    .dropdown-button{
+        display: inline-block;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        cursor: pointer;
+        width: 20px;
+    }
+
+    .burger-icon{
+        color: white;
+    }
+
+    .navbar-rightside{
+        margin-left: 0px;
+        margin-right: auto;
+        width: 100vw;
+    }
+
+    /*.link-container {
+    }
+
+    .link-container button {
+        display: block;
+      }*/
+
+    .link-container{
+        display: block;
+    }
+
+    .link-container div{
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .link-container div a{
+        margin-left: 0px;
+    }
+
+    
+    #hidden{
+        display: none;
+    }
+  }

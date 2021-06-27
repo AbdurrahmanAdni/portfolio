@@ -1,0 +1,30 @@
+.header-wrapper{
+    display: flex;
+    background: url("../images/wall-laptop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.layer{
+    display: flex;
+    background-color: rgba(77, 77, 77, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.main-info{
+    width: 100vw;
+    flex-direction: column;
+    padding: 0px 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info{
+    margin-top: auto;
+    margin-bottom: auto;
+}

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../styles/Navbar.css'
+import "../styles/scss/Navbar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
@@ -55,7 +55,7 @@ function Navbar() {
         <div className = "navbar-body">
             <div className = "navbar-leftside" href = "#">
                 <a href = "#">
-                    <span className = "logo-1">Portofo</span><span className = "logo-2">lio.</span>
+                    <span className = "logo-1">Portfo</span><span className = "logo-2">lio.</span>
                 </a>
             </div>
 
@@ -68,10 +68,10 @@ function Navbar() {
             <div className = "navbar-rightside" id = {!showLinks ? "hidden" : ""} >
                 <div className = "link-container">
                     <div><a href = "#">HOME</a></div>
-                    <div><a href = "#">ABOUT</a></div>
-                    <div><a href = "#">EXPERIENCE</a></div>
-                    <div><a href = "#">SKILLS</a></div>
-                    <div><a href = "#">INTEREST</a></div>
+                    <div><a href = "#about">ABOUT</a></div>
+                    <div><a href = "#service">SERVICE</a></div>
+                    <div><a href = "#experience">EXPERIENCE</a></div>
+                    <div><a href = "#contact">CONTACT</a></div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,77 @@
+$layerBackground : rgba(77, 77, 77, 0.7);
+$layerCardBackground : rgba(49, 49, 49, 0.7);
+$lightBlue : rgb(4, 139, 139);
+
+@mixin flex-box($space : center, $direction : row) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $space;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+/*.header-wrapper{
+    display: flex;
+    background: url("../../images/wall-laptop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}*/
+
+.header-wrapper{
+    display: flex;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.layer{
+    
+    @include flex-box(center);
+    width: 100%;
+    height : 100%;
+}
+
+/*.layer{
+    @include flex-box(center);
+    background-color: $layerBackground;
+    width: 100%;
+    height: 100%;
+}*/
+
+.main-info{
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .info{
+        width: fit-content;
+        margin: auto;
+        //background-color: $layerCardBackground;
+        padding : 25px 35px;
+        border-radius: 10px;
+    }
+
+    .title-1{
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .title-2{
+        color: white;
+        font-size: 36px;
+        text-transform: uppercase; 
+    
+        span{
+            color: $lightBlue;
+            font-weight: 600;
+        }
+    }
+    
+    .typed-text{
+        color: white;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,121 @@
+
+//Belajar pakai module scss (nama modul :_mixin.css)
+@import 'mixin';
+
+.navbar-body{
+    // display: flex;
+    // flex-wrap: wrap;
+    @include flex-box(center, row);
+    position: fixed;
+    font-size: 16px;
+    padding: 10px 30px;
+    // background-color: rgb(34, 34, 34);
+    background-color: black;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.navbar-leftside{
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    span{
+        font-size: 24px;
+    }
+
+    .logo-1{
+        color: white;
+    }
+
+    .logo-2{
+        font-weight: bold;
+        color: rgb(4, 139, 139);
+    }
+} 
+
+/*.dropdown-button #hidden{
+    display: none;
+}*/
+
+.dropdown-button{
+    display: none;
+}
+
+.navbar-rightside{
+    margin-left: auto;
+    // margin-top: auto;
+    // margin-bottom: auto;
+
+    .link-container {
+        // display: flex;    
+        @include flex-box();
+        transition: all 0.5s ease-in;
+        opacity: 1;
+
+        button{
+            display: none;
+        }
+
+        div a{
+            color: white;
+            text-decoration: none;
+            // margin-top: auto;
+            // margin-bottom: auto;
+            margin-left: 25px;
+            transition: color 0.3s ease;
+            border-top: 1px solid rgb(34, 34, 34);
+        }
+
+        div a:hover{
+            color: rgb(4, 139, 139);
+        }
+
+        div a:active, .link-container div a:focus{
+            border-top: 1px solid orange;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    .dropdown-button{
+        display: inline-block;
+        margin-left: auto;
+        // margin-top: auto;
+        // margin-bottom: auto;
+        cursor: pointer;
+        width: 20px;
+    }
+
+    .burger-icon{
+        color: white;
+    }
+
+    .navbar-rightside{
+        margin-left: 0px;
+        margin-right: auto;
+        width: 100vw;
+
+        .link-container{
+            display: block;
+
+            div{
+                margin-left: 0px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                a{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    
+    #hidden{
+        display: none;
+    }
+  }

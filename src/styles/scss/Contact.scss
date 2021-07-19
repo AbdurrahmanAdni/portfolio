@@ -1,0 +1,81 @@
+$lightBlue : rgb(4, 139, 139);
+
+#contact{
+    background-color: black;
+}
+
+.contact-container{
+    padding: 80px 100px;
+    .contact-title{
+        color: $lightBlue;
+        margin-left: 86px;
+    }
+
+    .input{
+
+        display: flex;
+        margin: 20px 0px;
+        
+        .input-left{
+            color: white;
+            display: flex;
+            width: 90px;
+
+            .input-icon{
+                color: $lightBlue;   
+                margin: auto;
+                font-size: 30px;
+            }
+        }
+
+        .input-right{
+            color: white;
+            width: 800px;
+            .label{
+                font-weight: bold;
+                margin-bottom: 10px;
+
+                .input-icon{
+                    color: $lightBlue;   
+                    margin: auto;
+                    font-size: 30px;
+                }
+            }
+
+            .form-input{
+                color: white;
+                background-color: black;
+                border: 1px solid $lightBlue;
+                padding: 5px 20px;
+                border-radius: 10px;
+                width: 80%;
+            }
+
+            .message{
+                word-wrap: break-word;
+                word-break: break-all;
+                height: 180px;
+            }
+        }
+    }
+
+    .submit-button{
+        background-color: black;
+        color: white;
+        border: 1px solid $lightBlue;
+        border-radius: 10px;
+        padding: 5px 25px;
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+
+    .submit-button:hover{
+        color: black;
+        background-color: $lightBlue;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .contact-container{
+    }
+}

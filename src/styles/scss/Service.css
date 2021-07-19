@@ -1,0 +1,64 @@
+#service {
+  background-color: black;
+}
+
+.service-container {
+  padding: 100px 100px;
+}
+
+.service-container .service-section-title {
+  font-size: 32px;
+  color: #048b8b;
+  text-align: center;
+}
+
+.service-container .service-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service-container .service-card-container .card {
+  width: 25%;
+  background-color: inherit;
+  border: none;
+}
+
+.service-container .service-card-container .card .icon-container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.service-container .service-card-container .card .icon-container .card-icon {
+  color: #048b8b;
+}
+
+.service-container .service-card-container .card .service-title {
+  font-size: 18px;
+  color: #048b8b;
+}
+
+.service-container .service-card-container .card .service-detail {
+  text-align: justify;
+  margin-top: 5px;
+  color: white;
+}
+
+@media only screen and (max-width: 840px) {
+  .service-container {
+    padding: 100px 0px;
+  }
+  .service-container .service-card-container {
+    display: inline-block;
+  }
+  .service-container .service-card-container .card {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Service.css.map */

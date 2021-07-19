@@ -1,0 +1,137 @@
+$lightBlue : rgb(4, 139, 139);
+
+@mixin flex-box($space : center) {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: $space;
+    align-items: center;
+}
+
+#about{
+    display: inline-block;
+}
+
+.about-profil{
+    //display: flex;
+    @include flex-box(center);
+    margin-top: 70px;
+    padding: 50px 100px;
+
+    .picture{
+        width: 200px;
+        border-radius: 50%;
+    }
+    
+    .biograph-title{
+        font-size: 32px;
+        margin-bottom: 10px;
+        
+    }
+
+    .biograph{
+        font-size: 15px;
+        margin-left: 60px;
+        text-align: justify;
+    }
+    
+}
+
+.about-education{
+    padding: 20px 90px;
+ 
+    .education-title{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+
+.education-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    margin-top: 10px;
+
+    .ed-data{
+
+
+        .school {
+            font-size: 18px;
+            font-weight: 600;
+            
+            transition: color 0.3s ease;
+        }
+
+    }
+
+    .ed-data:hover{
+        .school {
+            color: rgb(4, 139, 139);
+        }
+    }
+
+
+    .left {
+        text-align: right;
+
+    }
+
+    .city {
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .calendar {
+        margin-bottom: 50px;
+
+        span{
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        .svg-inline--fa.fa-w-14 {
+            color: rgb(180, 180, 180);
+            width: 13px;
+        }
+    }
+
+    
+
+    .rounder{
+        display: inline-block;
+        padding: 4px;
+        background-color: black;
+        border-radius: 50%;
+
+        .inside{
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: aqua;
+            border-radius: 50%;
+            margin : auto;
+            z-index: 1;
+        }
+    }
+
+    .line{
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: black;
+        transform: translate(6px, -7px);
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 978px){
+    .about-profil{
+        flex-wrap: wrap;
+        padding: 20px 50px;
+
+        .biograph{
+            margin-left: 0px;
+        }
+    }
+}

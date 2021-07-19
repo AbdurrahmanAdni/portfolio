@@ -25,6 +25,31 @@
 }
 
 .info{
-    margin-top: auto;
-    margin-bottom: auto;
+    width: fit-content;
+    margin: auto;
+    background-color: rgba(49, 49, 49, 0.7);
+    padding : 25px 35px;
+    border-radius: 10px;
+}
+
+.title-1{
+    /* color: rgb(4, 139, 139); */
+    color: white;
+    text-transform: uppercase;
+}
+
+.title-2{
+    /* color: rgb(4, 139, 139); */
+    color: black;
+    font-size: 36px;
+    text-transform: uppercase; 
+}
+
+.title-2 span{
+    color: black;
+}
+
+.typed-text{
+    color: black;
+    text-transform: uppercase;
 }

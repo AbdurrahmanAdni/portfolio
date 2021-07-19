@@ -1,0 +1,84 @@
+/*.header-wrapper{
+    display: flex;
+    background: url("../../images/wall-laptop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}*/
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/*.layer{
+    @include flex-box(center);
+    background-color: $layerBackground;
+    width: 100%;
+    height: 100%;
+}*/
+.main-info {
+  padding: 0px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main-info .info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 25px 35px;
+  border-radius: 10px;
+}
+
+.main-info .title-1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-info .title-2 {
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.main-info .title-2 span {
+  color: #048b8b;
+  font-weight: 600;
+}
+
+.main-info .typed-text {
+  color: white;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Header.css.map */

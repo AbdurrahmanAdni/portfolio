@@ -1,0 +1,126 @@
+.navbar-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  font-size: 16px;
+  padding: 10px 30px;
+  background-color: black;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.navbar-leftside a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-leftside span {
+  font-size: 24px;
+}
+
+.navbar-leftside .logo-1 {
+  color: white;
+}
+
+.navbar-leftside .logo-2 {
+  font-weight: bold;
+  color: #048b8b;
+}
+
+/*.dropdown-button #hidden{
+    display: none;
+}*/
+.dropdown-button {
+  display: none;
+}
+
+.navbar-rightside {
+  margin-left: auto;
+}
+
+.navbar-rightside .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  opacity: 1;
+}
+
+.navbar-rightside .link-container button {
+  display: none;
+}
+
+.navbar-rightside .link-container div a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  border-top: 1px solid #222222;
+}
+
+.navbar-rightside .link-container div a:hover {
+  color: #048b8b;
+}
+
+.navbar-rightside .link-container div a:active, .navbar-rightside .link-container .link-container div a:focus {
+  border-top: 1px solid orange;
+}
+
+@media only screen and (max-width: 610px) {
+  .dropdown-button {
+    display: inline-block;
+    margin-left: auto;
+    cursor: pointer;
+    width: 20px;
+  }
+  .burger-icon {
+    color: white;
+  }
+  .navbar-rightside {
+    margin-left: 0px;
+    margin-right: auto;
+    width: 100vw;
+  }
+  .navbar-rightside .link-container {
+    display: block;
+  }
+  .navbar-rightside .link-container div {
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .navbar-rightside .link-container div a {
+    margin-left: 0px;
+  }
+  #hidden {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

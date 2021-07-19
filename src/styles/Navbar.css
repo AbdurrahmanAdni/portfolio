@@ -9,6 +9,7 @@
     background-color: rgb(34, 34, 34);
     flex-wrap: wrap;
     width: 100vw;
+    z-index: 2;
 }
 
 .navbar-leftside a{

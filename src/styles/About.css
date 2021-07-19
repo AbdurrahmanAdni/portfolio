@@ -1,0 +1,88 @@
+#about{
+    display: inline-block;
+}
+
+.about-profil{
+    display: flex;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.biograph{
+    margin-left: 60px;
+}
+
+.biograph-title{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+.about-education{
+    padding: 0px 90px;
+}
+
+.education-title{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.education-data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.data-left{
+    text-align: right;
+}
+
+.school{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.city{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.svg-inline--fa.fa-w-14{
+    color: rgb(180, 180, 180);
+    width: 13px;
+}
+
+.calendar{
+    margin-bottom: 50px;
+}
+
+.calendar span{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    /* background-color: rgb(4, 139, 139); */
+    background-color: black;
+    border-radius: 50%;
+}
+
+.line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(114, 114, 114);
+    transform: translate(6px, -7px);
+}

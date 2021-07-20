@@ -77,8 +77,9 @@ function Experience({coba}) {
     return (
         <div id = "experience">
             <div className = "experience-container">
-                <h2 className = "experience-section-title">Experience</h2>
                 <Fade left>
+                    <h2 className = "experience-section-title">Experience</h2>
+                
                     <div className = "experience-card-container">
                         <Swiper
                             navigation

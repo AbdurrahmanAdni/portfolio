@@ -2,28 +2,42 @@ $lightBlue : rgb(4, 139, 139);
 
 #contact{
     background-color: black;
+    
 }
 
 .contact-container{
+    display: block;
     padding: 80px 100px;
     .contact-title{
         color: $lightBlue;
-        margin-left: 86px;
+        margin-left: 100px;
+        // text-align: center;
+        
+    }
+
+    .form-container{
+        // width: fit-content;
+        
     }
 
     .input{
 
         display: flex;
         margin: 20px 0px;
+        // justify-content: center;
         
         .input-left{
             color: white;
-            display: flex;
             width: 90px;
+            margin-right: 10px;
+            // display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
 
             .input-icon{
+                // margin: auto;
                 color: $lightBlue;   
-                margin: auto;
                 font-size: 30px;
             }
         }
@@ -66,7 +80,7 @@ $lightBlue : rgb(4, 139, 139);
         border-radius: 10px;
         padding: 5px 25px;
         margin-top: 10px;
-        margin-left: 90px;
+        margin-left: 100px;
     }
 
     .submit-button:hover{
@@ -75,7 +89,8 @@ $lightBlue : rgb(4, 139, 139);
     }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 617px) {
     .contact-container{
+        padding: 50px 20px;
     }
 }

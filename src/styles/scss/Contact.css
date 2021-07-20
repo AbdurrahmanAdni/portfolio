@@ -3,12 +3,13 @@
 }
 
 .contact-container {
+  display: block;
   padding: 80px 100px;
 }
 
 .contact-container .contact-title {
   color: #048b8b;
-  margin-left: 86px;
+  margin-left: 100px;
 }
 
 .contact-container .input {
@@ -20,15 +21,19 @@
 
 .contact-container .input .input-left {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 90px;
+  margin-right: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-container .input .input-left .input-icon {
   color: #048b8b;
-  margin: auto;
   font-size: 30px;
 }
 
@@ -70,11 +75,17 @@
   border-radius: 10px;
   padding: 5px 25px;
   margin-top: 10px;
-  margin-left: 90px;
+  margin-left: 100px;
 }
 
 .contact-container .submit-button:hover {
   color: black;
   background-color: #048b8b;
+}
+
+@media only screen and (max-width: 617px) {
+  .contact-container {
+    padding: 50px 20px;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

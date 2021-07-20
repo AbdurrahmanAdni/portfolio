@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Fade from 'react-reveal/Fade';
 import "../styles/scss/Experience.css"
 import Popup from "../components/Popup.js"
 
@@ -77,33 +78,35 @@ function Experience({coba}) {
         <div id = "experience">
             <div className = "experience-container">
                 <h2 className = "experience-section-title">Experience</h2>
-                <div className = "experience-card-container">
-                    <Swiper
-                        navigation
-                        loop = {true}
-                    >
-                        {experiences.map((experience, index) => 
-                            <SwiperSlide className = "swiper-slide" key = {index}>
-                                <div className = "experience-card" >
-                                    <div className = "card-top">
-                                        <img className = "card-image" src = {experience.mainImage} alt = "card-image"/>
-                                        
+                <Fade left>
+                    <div className = "experience-card-container">
+                        <Swiper
+                            navigation
+                            loop = {true}
+                        >
+                            {experiences.map((experience, index) => 
+                                <SwiperSlide className = "swiper-slide" key = {index}>
+                                    <div className = "experience-card" >
+                                        <div className = "card-top">
+                                            <img className = "card-image" src = {experience.mainImage} alt = "card-image"/>
+                                            
+                                        </div>
+                                        <div className = "card-bottom">
+                                            <div className = "experience-title">{experience.title}</div>
+                                            <div className = "type">Experience Type : {experience.type}</div>
+                                            <div className = "position">Role : {experience.position}</div>
+                                            <div className = "time">{experience.time}</div>
+                                            {/* <div className = "detail">{experience.detail}</div> */}
+                                        </div>
+                                        {/* <div className = "view-more-button" onClick = {() => setButtonPopup(true)}>View More</div>         */}
+                                        <div className = "view-more-button" onClick = {() => showPopup(true, experience.id)}>View More</div>
                                     </div>
-                                    <div className = "card-bottom">
-                                        <div className = "experience-title">{experience.title}</div>
-                                        <div className = "type">Experience Type : {experience.type}</div>
-                                        <div className = "position">Role : {experience.position}</div>
-                                        <div className = "time">{experience.time}</div>
-                                        {/* <div className = "detail">{experience.detail}</div> */}
-                                    </div>
-                                    {/* <div className = "view-more-button" onClick = {() => setButtonPopup(true)}>View More</div>         */}
-                                    <div className = "view-more-button" onClick = {() => showPopup(true, experience.id)}>View More</div>
-                                </div>
-                            </SwiperSlide>
-                        )}               
-                    </Swiper>
-       
-                </div>
+                                </SwiperSlide>
+                            )}               
+                        </Swiper>
+        
+                    </div>
+                </Fade>
 
                 <Popup trigger = {buttonPopup} setTrigger = {setButtonPopup}>
                     

@@ -92,5 +92,16 @@ $lightBlue : rgb(4, 139, 139);
 @media only screen and (max-width: 617px) {
     .contact-container{
         padding: 50px 20px;
+
+        .contact-title{
+            margin-left: 0px;
+            
+        }
+
+        .submit-button{
+            margin-left: auto;
+        }
     }
+
+    
 }

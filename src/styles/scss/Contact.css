@@ -87,5 +87,11 @@
   .contact-container {
     padding: 50px 20px;
   }
+  .contact-container .contact-title {
+    margin-left: 0px;
+  }
+  .contact-container .submit-button {
+    margin-left: auto;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

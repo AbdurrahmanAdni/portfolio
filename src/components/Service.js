@@ -70,31 +70,67 @@ function Services() {
                 </div>         
             </div>
 
-            {/* <div className = "skill-container">
-                <div className = "skill-section-title">Technical Skills</div>
-                <div className = "card-container">
-                    
-                    <div className = "card">
-                        <div className = "card-title">Language and Framework</div>
-                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
-                    </div>
+            <div className = "skill-container">
+                <Fade bottom>
+                    <div className = "skill-section-title">Technical Skills</div>
+                </Fade>
 
-                    <div className = "card">
-                        <div className = "card-title">Database Management</div>
-                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
-                    </div>
+                <Fade bottom>
+                    <div className = "card-container">
+                        <div className = "card">
+                            <div className = "card-title">Language and Framework</div>
+                            <div className = "card-detail">
+                                <div className = "list-wrapper">
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>JQuery</li>
+                                    <li>ReactJS</li>
+                                    <li>GastbyJS</li>
+                                    <li>Graphql</li>
+                                    <li>Bootstrap</li>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div className = "card">
-                        <div className = "card-title">NLP</div>
-                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
-                    </div>
+                        <div className = "card">
+                            <div className = "card-title">Database Management</div>
+                            <div className = "card-detail">
+                                <li>MySQL</li>
+                                <li>Postgresql</li>
+                            </div>
+                        </div>
 
-                    <div className = "card">
-                        <div className = "card-title">Tools</div>
-                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                        <div className = "card">
+                            <div className = "card-title">NLP</div>
+                            <div className = "card-detail">
+                                <div className = "list-wrapper">
+                                    <li>Tensorflow</li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className = "card">
+                            <div className = "card-title">Tools</div>
+                            <div className = "card-detail">
+                                <div className = "list-wrapper">
+                                    <li>VS code</li>
+                                    <li>Eclipse</li>
+                                    <li>Figma</li>
+                                    <li>Lucid Chart</li>
+                                    <li>Marvel</li>
+                                    <li>Github</li>
+                                    <li>Gitlab</li>
+                                    <li>Bitbucket</li>
+                                    <li>Android Studio</li>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div> */}
+                </Fade>
+            </div>
         </div>
     )
 }

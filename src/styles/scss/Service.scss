@@ -55,13 +55,22 @@ $lightBlue : rgb(4, 139, 139);
 }
 
 .skill-container{
-
+    margin-top: 100px;
     .skill-section-title{
         font-size: 32px;
         color: $lightBlue;
         text-align: center;
         
         margin-bottom: 30px;
+    }
+
+    .list-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+
+        li{
+            width: 150px;
+        }
     }
 }
 
@@ -77,6 +86,12 @@ $lightBlue : rgb(4, 139, 139);
             width: 80%;
             margin: 20px auto;
             text-align: center;
+        }
+    }
+
+    .skill-container{
+        .card{
+            text-align: left;
         }
     }
     

@@ -69,15 +69,17 @@ function Navbar() {
 
                 
                 <div className = "navbar-rightside" id = {!showLinks ? "hidden" : ""} >
-                    <Fade left>
+                    
                         <div className = "link-container">
-                            <div><a href = "#">HOME</a></div>
-                            <div><a href = "#about">ABOUT</a></div>
-                            <div><a href = "#service">SERVICE</a></div>
-                            <div><a href = "#experience">EXPERIENCE</a></div>
-                            <div><a href = "#contact">CONTACT</a></div>
+                            <Fade left>
+                                <div><a href = "#">HOME</a></div>
+                                <div><a href = "#about">ABOUT</a></div>
+                                <div><a href = "#service">SERVICE</a></div>
+                                <div><a href = "#experience">EXPERIENCE</a></div>
+                                <div><a href = "#contact">CONTACT</a></div>
+                            </Fade>
                         </div>
-                    </Fade>
+                    
                 </div>
                 
             </div>

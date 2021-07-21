@@ -46,11 +46,27 @@
   color: white;
 }
 
+.skill-container {
+  margin-top: 100px;
+}
+
 .skill-container .skill-section-title {
   font-size: 32px;
   color: #048b8b;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.skill-container .list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skill-container .list-wrapper li {
+  width: 150px;
 }
 
 @media only screen and (max-width: 840px) {
@@ -64,6 +80,9 @@
     width: 80%;
     margin: 20px auto;
     text-align: center;
+  }
+  .skill-container .card {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=Service.css.map */

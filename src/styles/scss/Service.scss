@@ -7,10 +7,11 @@ $lightBlue : rgb(4, 139, 139);
     // padding: 150px 100px;
     
     background-color: black;
+    padding: 100px 100px;
 }
 
 .service-container{
-    padding: 100px 100px;
+    
 
     .service-section-title{
         font-size: 32px;
@@ -19,56 +20,65 @@ $lightBlue : rgb(4, 139, 139);
         
         margin-bottom: 30px;
     }
+}
 
-    .service-card-container{
-        display: flex;
-        justify-content: space-between;
+.card-container{
+    display: flex;
+    justify-content: space-between;
 
-        .card{
-            width: 25%;
-            background-color: inherit;
-            border: none;
+    .card{
+        width: 25%;
+        background-color: inherit;
+        border: none;
 
-            .icon-container{
-                text-align: center;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                .card-icon{
-                    color: $lightBlue;
-                }
-
-            }
-
-            .service-title{
-                font-size: 18px;
+        .icon-container{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .card-icon{
                 color: $lightBlue;
             }
 
-            .service-detail{
-                text-align: justify;
-                margin-top: 5px;
-                color: white;
-            }
+        }
+
+        .card-title{
+            font-size: 18px;
+            color: $lightBlue;
+        }
+
+        .card-detail{
+            text-align: justify;
+            margin-top: 5px;
+            color: white;
         }
     }
+}
 
-    
+.skill-container{
+
+    .skill-section-title{
+        font-size: 32px;
+        color: $lightBlue;
+        text-align: center;
+        
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width: 840px){
-    .service-container{
+    #service{
+        padding: 70px 20px;
+    }
 
-        padding: 100px 0px;
+    .card-container{
+        display: inline-block;
 
-        .service-card-container{
-            display: inline-block;
-
-            .card{
-                width: 80%;
-                margin: 20px auto;
-                text-align: center;
-            }
+        .card{
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
         }
     }
+    
 }
 

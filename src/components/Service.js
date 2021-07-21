@@ -41,11 +41,11 @@ function Services() {
                 <Fade top>
                     <h2 className = "service-section-title">Service</h2>
                 </Fade>
-                <div className = "service-card-container">
+                <div className = "card-container">
 
-                    {services.map((service, index) =>
+                    {/* {services.map((service, index) =>
                         <Fade bottom> 
-                            <div key = {index} className = "card">
+                            <div key = {index} className = "service-card">
                                 <div className = "icon-container">
                                     <FontAwesomeIcon icon = {service.icon} size="2x" className = "card-icon" />
                                 </div>
@@ -53,10 +53,48 @@ function Services() {
                                 <div className = "service-detail">{service.detail}</div>
                             </div>
                         </Fade>
+                    )} */}
+
+                    {services.map((service, index) =>
+                        <Fade bottom> 
+                            <div key = {index} className = "card">
+                                <div className = "icon-container">
+                                    <FontAwesomeIcon icon = {service.icon} size="2x" className = "card-icon" />
+                                </div>
+                                <div className = "card-title">{service.name}</div>
+                                <div className = "card-detail">{service.detail}</div>
+                            </div>
+                        </Fade>
                     )}
                     
                 </div>         
             </div>
+
+            {/* <div className = "skill-container">
+                <div className = "skill-section-title">Technical Skills</div>
+                <div className = "card-container">
+                    
+                    <div className = "card">
+                        <div className = "card-title">Language and Framework</div>
+                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                    </div>
+
+                    <div className = "card">
+                        <div className = "card-title">Database Management</div>
+                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                    </div>
+
+                    <div className = "card">
+                        <div className = "card-title">NLP</div>
+                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                    </div>
+
+                    <div className = "card">
+                        <div className = "card-title">Tools</div>
+                        <div className = "card-detail">sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                    </div>
+                </div>
+            </div> */}
         </div>
     )
 }

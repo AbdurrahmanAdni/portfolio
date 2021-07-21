@@ -118,10 +118,19 @@
   .about-profil {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 20px 50px;
+    padding: 20px 10%;
   }
   .about-profil .biograph {
     margin-left: 0px;
+  }
+  .about-education {
+    padding: 20px 10%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .about-education {
+    padding: 20px 3px;
   }
 }
 /*# sourceMappingURL=About.css.map */

@@ -1,8 +1,5 @@
 #service {
   background-color: black;
-}
-
-.service-container {
   padding: 100px 100px;
 }
 
@@ -13,7 +10,7 @@
   margin-bottom: 30px;
 }
 
-.service-container .service-card-container {
+.card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,41 +19,48 @@
           justify-content: space-between;
 }
 
-.service-container .service-card-container .card {
+.card-container .card {
   width: 25%;
   background-color: inherit;
   border: none;
 }
 
-.service-container .service-card-container .card .icon-container {
+.card-container .card .icon-container {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.service-container .service-card-container .card .icon-container .card-icon {
+.card-container .card .icon-container .card-icon {
   color: #048b8b;
 }
 
-.service-container .service-card-container .card .service-title {
+.card-container .card .card-title {
   font-size: 18px;
   color: #048b8b;
 }
 
-.service-container .service-card-container .card .service-detail {
+.card-container .card .card-detail {
   text-align: justify;
   margin-top: 5px;
   color: white;
 }
 
+.skill-container .skill-section-title {
+  font-size: 32px;
+  color: #048b8b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 840px) {
-  .service-container {
-    padding: 100px 0px;
+  #service {
+    padding: 70px 20px;
   }
-  .service-container .service-card-container {
+  .card-container {
     display: inline-block;
   }
-  .service-container .service-card-container .card {
+  .card-container .card {
     width: 80%;
     margin: 20px auto;
     text-align: center;

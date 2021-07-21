@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import Flip from 'react-reveal/Flip';
+// import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobile } from "@fortawesome/free-solid-svg-icons"
 import { faObjectGroup } from "@fortawesome/free-solid-svg-icons"
@@ -37,13 +38,13 @@ function Services() {
     return (
         <div id = "service">
             <div className = "service-container">
-                <Flip left>
+                <Fade top>
                     <h2 className = "service-section-title">Service</h2>
-                </Flip>
+                </Fade>
                 <div className = "service-card-container">
 
                     {services.map((service, index) =>
-                        <Flip left> 
+                        <Fade bottom> 
                             <div key = {index} className = "card">
                                 <div className = "icon-container">
                                     <FontAwesomeIcon icon = {service.icon} size="2x" className = "card-icon" />
@@ -51,7 +52,7 @@ function Services() {
                                 <div className = "service-title">{service.name}</div>
                                 <div className = "service-detail">{service.detail}</div>
                             </div>
-                        </Flip>
+                        </Fade>
                     )}
                     
                 </div>         

@@ -20,20 +20,20 @@ function About() {
                         <div className = "biograph-content"> 
                             Hello there! My name is Abdurrahman Adni. I was born in Bandung, 29th June 1998. 
                             Currently, i'm a 4th year student of Software Engineering in Institut Teknologi Bandung.
-                            I've been taking part, as a professional, in software engineering for 1 year. 
+                            I've been taking part, professionally, in software engineering for several years. 
                             I've mostly worked professionally as a web developer, specifically as a front-end developer.
                             As a student, I also taking part as assistant in Software Engineering Laboratory. And in 2020, I was 
                             appointed as assistant coordinator of Software Engineering Laboratory. It really was an honour for me. 
                             Being an assistant taught me how to manage time as an assistant and a student, 
-                            how to communicate with students and lecturers, and how to be organized. And In addition, 
-                            I also learned more about software development more than in my class.  
+                            how to communicate with students and lecturers, and how to be organized. And because of that, 
+                            I learned more about software engineering more than in my class.  
                             As a sofware engineer, I like building new stuff and work with other people. 
                             More people, more fun i guess haha. 
+
+                            Aside from taking role as fronted dev, I also can take the role as a UI/UX Engineer and Project Manager.
                             
                             Personally, i like learning new things.
-                            Tbh, Until the end of my high school years, I was very fond of mathematics, physics and chemistry subject.
-                            I think I am more suitable as a mechanic rather than a sofware engineer. 
-                            Then I think maybe it's time to try a new challenge. And yeah, now here I am.
+                            
                             As for my hobbies, I like sports. Specifically football, futsal, and basketball. 
                             Very unsuitable for a software engineer hahaha.
                             

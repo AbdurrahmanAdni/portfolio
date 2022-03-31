@@ -78,7 +78,7 @@ $lightBlue : rgb(4, 139, 139);
     // height: 90%;
     
     display: block;
-    width: 95%;
+    width: 300px;
     max-height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -91,6 +91,10 @@ $lightBlue : rgb(4, 139, 139);
 
     .experience-container{    
         padding: 0px 20px;
+    }
+
+    .detail-img{
+        width: 600px;
     }
     
 

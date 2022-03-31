@@ -68,7 +68,7 @@ function Navbar() {
                 </div>
 
                 
-                <div className = "navbar-rightside" id = {!showLinks ? "hidden" : ""} >
+                <div className = "navbar-rightside" id = {showLinks == false ? "hidden" : ""} >
                     
                         <div className = "link-container">
                             <Fade left>

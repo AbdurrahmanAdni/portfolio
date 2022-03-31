@@ -27,6 +27,18 @@ import SO5 from "../images/SOITB-5.png"
 import SO6 from "../images/SOITB-6.png"
 import SO7 from "../images/SOITB-7.png"
 
+import Rekadia1 from "../images/Rekadia-1.svg"
+import Rekadia2 from "../images/Rekadia-2.svg"
+import Rekadia3 from "../images/Rekadia-3.svg"
+import Rekadia4 from "../images/Rekadia-4.svg"
+
+import TA1 from "../images/TA-1.png"
+import TA2 from "../images/TA-2.png"
+import TA3 from "../images/TA-3.png"
+import TA4 from "../images/TA-4.png"
+import TA5 from "../images/TA-5.png"
+import TA6 from "../images/TA-6.png"
+
 SwiperCore.use([Navigation, Pagination])
 
 function Experience({coba}) {
@@ -40,7 +52,7 @@ function Experience({coba}) {
             time : "June 2020 - Sept 2020",
             mainImage : Neurafarm1,
             images : [Neurafarm1, Neurafarm2, Neurafarm3, Neurafarm4],
-            detail : "This is my first experience to work as a professional. Nerafarm is a startup company that engaged in agricultural technology. I was worked as a software engineer intern, specifically as a frontend engineer. As an intern, I was responsible to build a semi-dynamic website for company profile and job portal that is available in Neurafarm. To build this website, I use GatsbyJS as the frontend framework, Strapi as CMS (Content Management System), and GraphQL as the tools to create a query and get the data from the backend."
+            detail : "Nerafarm is a startup company that engaged in agricultural technology. I was worked as a software engineer intern, specifically as a frontend engineer. As an intern, I was responsible to build a semi-dynamic website for company profile and job portal that is available in Neurafarm. To build this website, I used GatsbyJS as the frontend framework, Strapi as CMS (Content Management System), and GraphQL as the tools to create a query and get the data from the backend."
         },
         {
             id : "ITB",
@@ -61,6 +73,26 @@ function Experience({coba}) {
             mainImage : Genose2,
             images : [Genose1, Genose2, Genose3],
             detail : "This is my second project as a software engineer. In Dec 2020 - Jan 2021, I was working with a team of 3 people (including me) to build a web-based dashboard to monitoring and reporting covid-19 test result from GeNose's Covid-19 detection tools. In this project, I had the role as a Frontend engineer (main) and as well as UI/UX designer. For the tools, we used ReactJS to build the website with gRPC and Firebase."
+        },
+        {
+            id : "Rekadia",
+            title: "Rekadia",
+            type : "Part-time",
+            position : "Frontend Engineer",
+            time : "Aug 2021 - Nov 2021",
+            mainImage : Rekadia1,
+            images : [Rekadia1, Rekadia2, Rekadia3, Rekadia4],
+            detail : "Work as a frontend engineer. Responsible to build a web based app using NextJs, Typescript, and Tailwind. "
+        },
+        {
+            id : "TA",
+            title: "Online-based Exam Software (UI/UX)",
+            type : "Project",
+            position : "UI/UX Designer",
+            time : "Jan 2021 - March 2022",
+            mainImage : TA1,
+            images : [TA1, TA2, TA3, TA4, TA5, TA6],
+            detail : "Final project as a software engineer student. Built an interaction design for online-based exam software using Figma and Iconify."
         }
     ]);
 

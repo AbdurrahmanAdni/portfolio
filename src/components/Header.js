@@ -17,7 +17,7 @@ function Header() {
                         <h3>
                             <Typed 
                                 className = "typed-text"
-                                strings = {["Web Developer", "UI/UX Designer", "Android Developer"]}
+                                strings = {["Web Development", "UI/UX Design", "Project Management"]}
                                 typeSpeed = {40}
                                 backSpeed = {60}
                                 loop

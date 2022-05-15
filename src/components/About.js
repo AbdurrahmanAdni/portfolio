@@ -119,7 +119,7 @@ function About() {
                                 <h5 className = "city">Bandung, Indonesia</h5>
                                 <div className = "calendar">
                                     <FontAwesomeIcon icon = {faCalendar} size="lg" className = "calendar-icon" />
-                                    <span>2017-2021</span>
+                                    <span>2017-2022</span>
                                 </div>
                             </div>
                         </div>

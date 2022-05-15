@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobile } from "@fortawesome/free-solid-svg-icons"
 import { faObjectGroup } from "@fortawesome/free-solid-svg-icons"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
+import {faBook} from "@fortawesome/free-solid-svg-icons"
 import "../styles/scss/Service.css"
 
 
@@ -14,20 +15,25 @@ function Services() {
     const [services] = useState([
         {
             name: "Web Development",
-            detail : "Mostly worked professionally as a web developer, specifically as a front-end developer.",
+            detail : "Mostly worked professionally as a web developer, specifically as front-end developer.",
             icon : faLaptopCode
         },
         {
             name: "UI/UX Design",
-            detail : "Had taken role as a UI/UX designer in two projects. And on my final year as a SE student, my final project was also related to UI/UX design.",
+            detail : "Had taken role as a UI/UX designer in two projects. I also choose UI/UX research as my final project in my last year of college.",
             icon : faObjectGroup
 
         },
         {
-            name: "Android Development",
-            detail : "Android development is a new thing for me. It's really instriguing. Applying what I have learned by going directly into a real project will be a new challenge for me.",
-            icon : faMobile
-        }
+            name: "Project Management",
+            detail : "Never had any professional experience as a project manager, but had project management training from one of Indonesia's IT training institution. It really is interesting. Applying what I have learned by going directly into a real project will be a new challenge for me.",
+            icon : faBook
+        },
+        // {
+        //     name: "Android Development",
+        //     detail : "Android development is a new thing for me. It's really instriguing. Applying what I have learned by going directly into a real project will be a new challenge for me.",
+        //     icon : faMobile
+        // }
     ]);
 
     // const x = {
@@ -86,9 +92,9 @@ function Services() {
                                     <li>HTML</li>
                                     <li>CSS</li>
                                     <li>JavaScript</li>
-                                    <li>JQuery</li>
                                     <li>ReactJS</li>
-                                    <li>GastbyJS</li>
+                                    <li>NextJs</li>
+                                    <li>GastbyJs</li>
                                     <li>Graphql</li>
                                     <li>Bootstrap</li>
                                 </div>
@@ -99,7 +105,6 @@ function Services() {
                             <div className = "card-title">Database Management</div>
                             <div className = "card-detail">
                                 <li>MySQL</li>
-                                <li>Postgresql</li>
                             </div>
                         </div>
 
@@ -124,7 +129,8 @@ function Services() {
                                     <li>Github</li>
                                     <li>Gitlab</li>
                                     <li>Bitbucket</li>
-                                    <li>Android Studio</li>
+                                    <li>MS Word</li>
+                                    <li>MS Excel</li>
                                 </div>
                             </div>
                         </div>

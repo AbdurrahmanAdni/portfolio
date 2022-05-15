@@ -1,6 +1,6 @@
 #service {
   background-color: black;
-  padding: 100px 100px;
+  padding: 5rem 100px;
 }
 
 .service-container .service-section-title {
@@ -47,7 +47,7 @@
 }
 
 .skill-container {
-  margin-top: 100px;
+  margin-top: 2rem;
 }
 
 .skill-container .skill-section-title {

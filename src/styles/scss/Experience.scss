@@ -16,62 +16,186 @@ $lightBlue : rgb(4, 139, 139);
 
 .experience-card-container{
 
-    margin-top: 0px;
-
     .swiper-slide{
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
-    .experience-card{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-     
-        .card-top{
-            .card-image{
-                width: 100%;
-                border: 1px solid rgba(0, 0, 0, 0.171);
-                border-radius: 5px;
-            }
-        }
+    .exp-card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
 
-        .card-bottom{
-            font-size: 14px;
-            .experience-title{
-                font-size: 26px;
-            }
+        background-color: rgb(255, 250, 250);
 
-            div{
-                margin-top: 3px;
-            }
-        }
-
-        .view-more-button{
-            font-size: 14px;
-            background-color: rgb(0, 162, 255);
-            color: white;
-            width: fit-content;
-            margin-top: 10px;
-            border : 1px solid;
-            border-radius: 10px;
-            padding : 5px 10px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .view-more-button:hover{
-            background-color: black;
+        .card-left{
+            width: 800px;
             
+            flex-grow: 1;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin: 30px auto;
+            background-color: white;
+            text-align: center;
+
+            .exp-img{
+                height: 350px;
+                width: 90%;
+                margin: auto 0;
+            }
+        }
+
+        .card-right{
+            width: 400px;
+            flex-grow: 1;
+            padding: 0px 40px;
+            text-align: center;
+            margin: 30px auto;
+
+            .exp-detail {
+                text-align: justify;
+                font-size: 14px;
+            }
+
+            .tag-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                font-size: 14px;
+                margin-top: 10px;
+
+                .tag {
+                    background-color: rgba(50, 50, 228, 0.64);
+                    color: white;
+                    padding: 5px 15px;
+                    border-radius: 30px;
+                }
+            }
+
+            .exp-period {
+                background-color: rgba(52, 182, 106, 0.64);
+                margin-top: 10px;
+                width: fit-content;
+                color: white;
+                font-size: 14px;
+                padding: 5px 15px;
+                border-radius: 30px;
+            }
         }
     }
+
+    // .exp-card{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin: 30px auto;
+        
+    //     .card-left{
+    //         width: 3000px;
+    //         border-radius: 15px;
+    //         padding: 3rem;
+    //         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            
+    //         .exp-img{
+    //             width: 100%;
+    //         }
+    //     }
+
+    //     .card-right{
+    //         padding: 0px 40px;
+    //         text-align: center;
+
+    //         .exp-detail {
+    //             text-align: justify;
+    //             font-size: 14px;
+    //         }
+
+    //         .tag-container {
+    //             display: flex;
+    //             flex-wrap: wrap;
+    //             gap: 10px;
+    //             font-size: 14px;
+    //             margin-top: 10px;
+
+    //             .tag {
+    //                 background-color: rgba(50, 50, 228, 0.64);
+    //                 color: white;
+    //                 padding: 5px 15px;
+    //                 border-radius: 30px;
+    //             }
+    //         }
+
+    //         .exp-period {
+    //             background-color: rgba(52, 182, 106, 0.64);
+    //             margin-top: 10px;
+    //             width: fit-content;
+    //             color: white;
+    //             font-size: 14px;
+    //             padding: 5px 15px;
+    //             border-radius: 30px;
+    //         }
+    //     }
+    // }
+
+    // .experience-card{
+    //     width: 80%;
+    //     margin-left: auto;
+    //     margin-right: auto;
+     
+    //     .card-top{
+    //         .card-image{
+    //             width: 100%;
+    //             border: 1px solid rgba(0, 0, 0, 0.171);
+    //             border-radius: 5px;
+    //         }
+    //     }
+
+    //     .card-bottom{
+    //         font-size: 14px;
+    //         .experience-title{
+    //             font-size: 26px;
+    //         }
+
+    //         div{
+    //             margin-top: 3px;
+    //         }
+    //     }
+
+    //     .view-more-button{
+    //         font-size: 14px;
+    //         background-color: rgb(0, 162, 255);
+    //         color: white;
+    //         width: fit-content;
+    //         margin-top: 10px;
+    //         border : 1px solid;
+    //         border-radius: 10px;
+    //         padding : 5px 10px;
+    //         transition: all 0.3s ease;
+    //         cursor: pointer;
+    //     }
+
+    //     .view-more-button:hover{
+    //         background-color: black;
+            
+    //     }
+    // }
 }
 
-.exp-detail{
-    margin-top: 10px;
-    text-align: justify;
+// .exp-card{
+//     display: grid;
+    
 
-    font-size: 14px;
-}
+//     width: 80%;
+// }
+
+// .exp-detail{
+//     margin-top: 10px;
+//     text-align: justify;
+
+//     font-size: 14px;
+// }
 
 .detail-img{
     // width: 90%;

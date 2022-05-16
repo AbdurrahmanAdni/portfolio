@@ -19,13 +19,13 @@ function About() {
                         <div className = "biograph-title">About me</div>
                         <div className = "biograph-content"> 
                             Hello there! My name is Abdurrahman Adni. I was born in Bandung, 29th June 1998. 
-                            Currently, i'm a 4th year student of Software Engineering in Institut Teknologi Bandung.
+                            I'm a 4th year student of Software Engineering in Institut Teknologi Bandung.
                             I've been taking part, professionally, in software engineering for several years. 
                             I've mostly worked professionally as a web developer, specifically as a front-end developer.
                             As a student, I also taking part as assistant in Software Engineering Laboratory. And in 2020, I was 
                             appointed as assistant coordinator of Software Engineering Laboratory. It really was an honour for me. 
                             Being an assistant taught me how to manage time as an assistant and a student, 
-                            how to communicate with students and lecturers, and how to be organized. And because of that, 
+                            how to communicate with the students and the lecturers, and how to be organized. And because of that, 
                             I learned more about software engineering more than in my class.  
                             As a sofware engineer, I like building new stuff and work with other people. 
                             More people, more fun i guess haha. 

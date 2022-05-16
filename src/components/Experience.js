@@ -10,7 +10,7 @@ import 'swiper/swiper-bundle.css'
 // import Carousel, {slidesToShowPlugin, Dots} from '@brainhubeu/react-carousel';
 // import '@brainhubeu/react-carousel/lib/style.css';
 
-import Neurafarm1 from "../images/neurafarm-1.png"
+import Neurafarm1 from "../images/neurafarm.png"
 import Neurafarm2 from "../images/neurafarm-2.png"
 import Neurafarm3 from "../images/neurafarm-3.png"
 import Neurafarm4 from "../images/neurafarm-4.png"
@@ -48,17 +48,17 @@ function Experience({coba}) {
             id : "Neurafarm",
             title: "Neurafarm",
             type : "Internship",
-            position : "Frontend Engineer",
+            position : ["Frontend Engineer"],
             time : "June 2020 - Sept 2020",
             mainImage : Neurafarm1,
             images : [Neurafarm1, Neurafarm2, Neurafarm3, Neurafarm4],
-            detail : "Nerafarm is a startup company that engaged in agricultural technology. I was worked as a software engineer intern, specifically as a frontend engineer. As an intern, I was responsible to build a semi-dynamic website for company profile and job portal that is available in Neurafarm. To build this website, I used GatsbyJS as the frontend framework, Strapi as CMS (Content Management System), and GraphQL as the tools to create a query and get the data from the backend."
+            detail : "Nerafarm is a startup company that engaged in agricultural technology. As a software engineer intern, specifically as a frontend engineer, approximately for 4 months. As an intern, I was responsible to build a semi-dynamic website for company profile and company's job vacancy portal. To build this website, I use GatsbyJS as the framework, Strapi as CMS (Content Management System), and GraphQL as the tools get the data from the API."
         },
         {
             id : "ITB",
             title: "ITB's Student Outcome Web",
             type : "Project",
-            position : "UI/UX Designer, Frontend Engineer",
+            position : ["UI/UX Designer", "Frontend Engineer"],
             time : "Feb 2020 - Apr 2020",
             mainImage : SO7,
             images : [SO7, SO2, SO1,SO3, SO4, SO5, SO6],
@@ -68,7 +68,7 @@ function Experience({coba}) {
             id : "Genose",
             title: "Genose Covid-19 Dashboard",
             type : "Project",
-            position : "UI/UX Designer, Frontend Engineer",
+            position : ["UI/UX Designer", "Frontend Engineer"],
             time : "Dec 2020 - Jan 2021",
             mainImage : Genose2,
             images : [Genose1, Genose2, Genose3],
@@ -78,7 +78,7 @@ function Experience({coba}) {
             id : "Rekadia",
             title: "Rekadia",
             type : "Part-time",
-            position : "Frontend Engineer",
+            position : ["Frontend Engineer"],
             time : "Aug 2021 - Nov 2021",
             mainImage : Rekadia1,
             images : [Rekadia1, Rekadia2, Rekadia3, Rekadia4],
@@ -88,7 +88,7 @@ function Experience({coba}) {
             id : "TA",
             title: "Online-based Exam Software (UI/UX)",
             type : "Project",
-            position : "UI/UX Designer",
+            position : ["UI/UX Designer"],
             time : "Jan 2021 - March 2022",
             mainImage : TA1,
             images : [TA1, TA2, TA3, TA4, TA5, TA6],
@@ -110,10 +110,10 @@ function Experience({coba}) {
         <div id = "experience">
             <div className = "experience-container">
                 <Fade left>
-                    <h2 className = "experience-section-title">Experience</h2>
+                    <h2 className = "experience-section-title">Experience(s)</h2>
                 
                     <div className = "experience-card-container">
-                        <Swiper
+                        {/* <Swiper
                             navigation
                             loop = {true}
                         >
@@ -129,15 +129,57 @@ function Experience({coba}) {
                                             <div className = "type">Experience Type : {experience.type}</div>
                                             <div className = "position">Role : {experience.position}</div>
                                             <div className = "time">{experience.time}</div>
-                                            {/* <div className = "detail">{experience.detail}</div> */}
                                         </div>
-                                        {/* <div className = "view-more-button" onClick = {() => setButtonPopup(true)}>View More</div>         */}
                                         <div className = "view-more-button" onClick = {() => showPopup(true, experience.id)}>View More</div>
                                     </div>
+                                    
                                 </SwiperSlide>
                             )}               
+                        </Swiper> */}
+                        <Swiper
+                            pagination={{
+                            dynamicBullets: true,
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                        >
+                            {experiences.map((experience, index) => 
+                                <SwiperSlide className = "swiper-slide" key = {index}>
+                                    <div className="exp-card">
+                                        <div className="card-left">
+                                            {/* <img className = "exp-img" src = {experience.mainImage} alt = "card-image"/> */}
+                                            <Swiper
+                                                className="mySwiper swiper-h"
+                                                spaceBetween={50}
+                                                pagination={{
+                                                  clickable: true,
+                                                }}
+                                                modules={[Pagination]}
+                                            >
+                                                {experience.images.map((image, index) => 
+                                                    <SwiperSlide key = {index} >
+                                                        
+                                                        <img className = "exp-img" src = {image} alt = "detailimage" />
+                                                    </SwiperSlide>
+                                                )}
+                                            </Swiper>
+                                        </div>
+                                        <div className = "card-right">
+                                            <h3 className = "exp-title">{experience.title}</h3>
+                                            <div className = "exp-detail">{experience.detail}</div>
+                                            <div className="tag-container">
+                                                <div className = "tag">{experience.type}</div>
+                                                {experience.position.map((pos, index) => (
+                                                    <div className = "tag" key={index}>{pos}</div>
+                                                ))}
+                                            </div>
+                                            
+                                            <div className = "exp-period">{experience.time}</div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            )} 
                         </Swiper>
-        
                     </div>
                 </Fade>
 

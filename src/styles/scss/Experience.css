@@ -6,62 +6,90 @@
   padding: 80px 100px;
 }
 
-.experience-card-container {
-  margin-top: 0px;
-}
-
 .experience-card-container .swiper-slide {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-.experience-card-container .experience-card {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.experience-card-container .experience-card .card-top .card-image {
+.experience-card-container .exp-card {
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.171);
-  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: snow;
 }
 
-.experience-card-container .experience-card .card-bottom {
+.experience-card-container .exp-card .card-left {
+  width: 800px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 15px;
+  padding: 3rem;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 30px auto;
+  background-color: white;
+  text-align: center;
+}
+
+.experience-card-container .exp-card .card-left .exp-img {
+  height: 350px;
+  width: 90%;
+  margin: auto 0;
+}
+
+.experience-card-container .exp-card .card-right {
+  width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0px 40px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.experience-card-container .exp-card .card-right .exp-detail {
+  text-align: justify;
   font-size: 14px;
 }
 
-.experience-card-container .experience-card .card-bottom .experience-title {
-  font-size: 26px;
-}
-
-.experience-card-container .experience-card .card-bottom div {
-  margin-top: 3px;
-}
-
-.experience-card-container .experience-card .view-more-button {
+.experience-card-container .exp-card .card-right .tag-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
   font-size: 14px;
-  background-color: #00a2ff;
+  margin-top: 10px;
+}
+
+.experience-card-container .exp-card .card-right .tag-container .tag {
+  background-color: rgba(50, 50, 228, 0.64);
   color: white;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.experience-card-container .exp-card .card-right .exp-period {
+  background-color: rgba(52, 182, 106, 0.64);
+  margin-top: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  padding: 5px 10px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.experience-card-container .experience-card .view-more-button:hover {
-  background-color: black;
-}
-
-.exp-detail {
-  margin-top: 10px;
-  text-align: justify;
+  color: white;
   font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 30px;
 }
 
 .detail-img {

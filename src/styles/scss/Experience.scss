@@ -84,6 +84,17 @@ $lightBlue : rgb(4, 139, 139);
                 padding: 5px 15px;
                 border-radius: 30px;
             }
+
+            .visit-link {
+                margin-top: 15px;
+                color: rgb(84, 84, 207);
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .visit-link:hover{
+                color: black;
+            }
         }
     }
 
@@ -197,18 +208,16 @@ $lightBlue : rgb(4, 139, 139);
 //     font-size: 14px;
 // }
 
-.detail-img{
-    // width: 90%;
-    // height: 90%;
-    
-    display: block;
-    width: 300px;
-    max-height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
+// .detail-img{
+//     display: block;
+//     width: 300px;
+//     max-height: 400px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 
-@media only screen and (max-width: 617px) {
+@media only screen and (max-width: 1060px) {
+
     #experience{
         padding: 50px 0px;
     }
@@ -217,13 +226,36 @@ $lightBlue : rgb(4, 139, 139);
         padding: 0px 20px;
     }
 
-    .detail-img{
-        width: 600px;
-    }
-    
+    .experience-card-container{
+        .exp-card{
 
-    // .experience-card-container{
-    //     .experience-card{
-    //     }
-    // }
+            .card-left{
+                width: 100%;
+
+                .exp-img{
+                    height: 300px;
+                    width: 100%;
+                    margin: auto auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 517px) {
+    .experience-card-container{
+        .exp-card{
+
+            .card-left{
+                width: 100%;
+                padding: 20px;
+
+                .exp-img{
+                    height: 200px;
+                    width: 100%;
+                    margin: auto auto;
+                }
+            }
+        }
+    }
 }

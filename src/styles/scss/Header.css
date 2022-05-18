@@ -61,24 +61,43 @@
   border-radius: 10px;
 }
 
-.main-info .title-1 {
+.main-info .info .title-1 {
   color: white;
   text-transform: uppercase;
 }
 
-.main-info .title-2 {
+.main-info .info .title-2 {
   color: white;
   font-size: 36px;
   text-transform: uppercase;
 }
 
-.main-info .title-2 span {
+.main-info .info .title-2 span {
   color: #048b8b;
   font-weight: 600;
 }
 
-.main-info .typed-text {
+.main-info .info .typed-text {
   color: white;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 517px) {
+  .main-info {
+    padding: 0px;
+  }
+  .main-info .info {
+    padding: 0px;
+    width: 100%;
+  }
+  .main-info .info .title-1 {
+    font-size: 5.9vw;
+  }
+  .main-info .info .title-2 {
+    font-size: 7.9vw;
+  }
+  .main-info .info .typed-text {
+    font-size: 5vw;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

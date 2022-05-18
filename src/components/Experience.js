@@ -52,7 +52,8 @@ function Experience({coba}) {
             time : "June 2020 - Sept 2020",
             mainImage : Neurafarm1,
             images : [Neurafarm1, Neurafarm2, Neurafarm3, Neurafarm4],
-            detail : "Nerafarm is a startup company that engaged in agricultural technology. As a software engineer intern, specifically as a frontend engineer, approximately for 4 months. As an intern, I was responsible to build a semi-dynamic website for company profile and company's job vacancy portal. To build this website, I use GatsbyJS as the framework, Strapi as CMS (Content Management System), and GraphQL as the tools get the data from the API."
+            detail : "Nerafarm is a startup company that engaged in agricultural technology. As a software engineer intern, specifically as a frontend engineer, approximately for 4 months. As an intern, I was responsible to build a semi-dynamic website for company profile and company's job vacancy portal. To build this website, I use GatsbyJS as the framework, Strapi as CMS (Content Management System), and GraphQL as the tools get the data from the API.",
+            site : "https://www.neurafarm.com/"
         },
         {
             id : "ITB",
@@ -62,7 +63,8 @@ function Experience({coba}) {
             time : "Feb 2020 - Apr 2020",
             mainImage : SO7,
             images : [SO7, SO2, SO1,SO3, SO4, SO5, SO6],
-            detail : "This project is my first project as a software engineer. In this project, I had the role as UI/UX designer as well as Frontend engineer. I was working with a team of 5 people (including me) to build a web-based application to visualize ITB’s student study result. As for the tools, we used Laravel Framework to build the web, Figma to create the UI/UX prototype, and Gitlab as version control"
+            detail : "This project is my first project as a software engineer. In this project, I had the role as UI/UX designer as well as Frontend engineer. I was working with a team of 5 people (including me) to build a web-based application to visualize ITB’s student study result. As for the tools, we used Laravel Framework to build the web, Figma to create the UI/UX prototype, and Gitlab as version control",
+            site : null
         },
         {
             id : "Genose",
@@ -72,7 +74,8 @@ function Experience({coba}) {
             time : "Dec 2020 - Jan 2021",
             mainImage : Genose2,
             images : [Genose1, Genose2, Genose3],
-            detail : "This is my second project as a software engineer. In Dec 2020 - Jan 2021, I was working with a team of 3 people (including me) to build a web-based dashboard to monitoring and reporting covid-19 test result from GeNose's Covid-19 detection tools. In this project, I had the role as a Frontend engineer (main) and as well as UI/UX designer. For the tools, we used ReactJS to build the website with gRPC and Firebase."
+            detail : "This is my second project as a software engineer. In Dec 2020 - Jan 2021, I was working with a team of 3 people (including me) to build a web-based dashboard to monitoring and reporting covid-19 test result from GeNose's Covid-19 detection tools. In this project, I had the role as a Frontend engineer (main) and as well as UI/UX designer. For the tools, we used ReactJS to build the website with gRPC and Firebase.",
+            site : null
         },
         {
             id : "Rekadia",
@@ -82,7 +85,8 @@ function Experience({coba}) {
             time : "Aug 2021 - Nov 2021",
             mainImage : Rekadia1,
             images : [Rekadia1, Rekadia2, Rekadia3, Rekadia4],
-            detail : "Work as a frontend engineer. Responsible to build a web based app using NextJs, Typescript, and Tailwind. "
+            detail : "Work as a frontend engineer. Responsible to build a web based app using NextJs, Typescript, and Tailwind. ",
+            site : null
         },
         {
             id : "TA",
@@ -92,7 +96,8 @@ function Experience({coba}) {
             time : "Jan 2021 - March 2022",
             mainImage : TA1,
             images : [TA1, TA2, TA3, TA4, TA5, TA6],
-            detail : "Final project as a software engineer student. Built an interaction design for online-based exam software using Figma and Iconify."
+            detail : "Final project as a software engineer student. Built an interaction design for online-based exam software using Figma and Iconify.",
+            site : "https://www.figma.com/proto/gCHOFCm7w01TPeCcS6xaDJ/High-fidelity-2.0?node-id=14%3A677&starting-point-node-id=14%3A677&scaling=scale-down"
         }
     ]);
 
@@ -175,6 +180,10 @@ function Experience({coba}) {
                                             </div>
                                             
                                             <div className = "exp-period">{experience.time}</div>
+                                        
+                                            {experience.site !== null? (
+                                                <div className="visit-link" onClick={()=> window.open(experience.site, "_blank")}>Visit Site</div>
+                                            ) : (<div></div>) }
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -183,7 +192,7 @@ function Experience({coba}) {
                     </div>
                 </Fade>
 
-                <Popup trigger = {buttonPopup} setTrigger = {setButtonPopup}>
+                {/* <Popup trigger = {buttonPopup} setTrigger = {setButtonPopup}>
                     
                     {experiences.map((experience, index) =>{
                             if(experience.id === activeExp){
@@ -211,7 +220,7 @@ function Experience({coba}) {
                         }         
                     )}
                     
-                </Popup>    
+                </Popup>     */}
 
                 
             </div>

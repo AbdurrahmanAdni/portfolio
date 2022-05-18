@@ -92,23 +92,43 @@
   border-radius: 30px;
 }
 
-.detail-img {
-  display: block;
-  width: 300px;
-  max-height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+.experience-card-container .exp-card .card-right .visit-link {
+  margin-top: 15px;
+  color: #5454cf;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 617px) {
+.experience-card-container .exp-card .card-right .visit-link:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 1060px) {
   #experience {
     padding: 50px 0px;
   }
   .experience-container {
     padding: 0px 20px;
   }
-  .detail-img {
-    width: 600px;
+  .experience-card-container .exp-card .card-left {
+    width: 100%;
+  }
+  .experience-card-container .exp-card .card-left .exp-img {
+    height: 300px;
+    width: 100%;
+    margin: auto auto;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .experience-card-container .exp-card .card-left {
+    width: 100%;
+    padding: 20px;
+  }
+  .experience-card-container .exp-card .card-left .exp-img {
+    height: 200px;
+    width: 100%;
+    margin: auto auto;
   }
 }
 /*# sourceMappingURL=Experience.css.map */

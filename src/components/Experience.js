@@ -1,14 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade';
 import "../styles/scss/Experience.css"
-import Popup from "../components/Popup.js"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css'
-
-// import Carousel, {slidesToShowPlugin, Dots} from '@brainhubeu/react-carousel';
-// import '@brainhubeu/react-carousel/lib/style.css';
 
 import Neurafarm1 from "../images/neurafarm.png"
 import Neurafarm2 from "../images/neurafarm-2.png"
@@ -39,11 +35,15 @@ import TA4 from "../images/TA-4.png"
 import TA5 from "../images/TA-5.png"
 import TA6 from "../images/TA-6.png"
 
+import biofarma1 from "../images/biofarma-1.jpeg"
+import biofarma2 from "../images/biofarma-1.jpeg"
+import biofarma3 from "../images/biofarma-1.jpeg"
+
 SwiperCore.use([Navigation, Pagination])
 
-function Experience({coba}) {
+function Experience() {
 
-    const [experiences, setExperiences] = useState([
+    const experiences= [
         {
             id : "Neurafarm",
             title: "Neurafarm",
@@ -98,18 +98,19 @@ function Experience({coba}) {
             images : [TA1, TA2, TA3, TA4, TA5, TA6],
             detail : "Final project as a software engineer student. Built an interaction design for online-based exam software using Figma and Iconify.",
             site : "https://www.figma.com/proto/gCHOFCm7w01TPeCcS6xaDJ/High-fidelity-2.0?node-id=14%3A677&starting-point-node-id=14%3A677&scaling=scale-down"
-        }
-    ]);
-
-    const [buttonPopup, setButtonPopup] = useState(false);
-
-    const [activeExp, setActiveExp] = useState("Neurafarm")
-
-    function showPopup(isShow, id){
-        setButtonPopup(isShow);
-        console.log(id);
-        setActiveExp(id);
-    }
+        },
+        {
+            id : "biofarma",
+            title: "Biofarma",
+            type : "Fulltime",
+            position : ["Frontend Engineer"],
+            time : "July 2022 - Sept 2022",
+            mainImage : biofarma1,
+            images : [biofarma1, biofarma2, biofarma3],
+            detail : "Built and developed a web-based dashboard for monitoring and reporting vaccine production (specifically in quality control and quality assurance). Developed using Reactjs.",
+            site : null
+        },
+    ];
 
     return (
         <div id = "experience">
@@ -118,29 +119,7 @@ function Experience({coba}) {
                     <h2 className = "experience-section-title">Experience(s)</h2>
                 
                     <div className = "experience-card-container">
-                        {/* <Swiper
-                            navigation
-                            loop = {true}
-                        >
-                            {experiences.map((experience, index) => 
-                                <SwiperSlide className = "swiper-slide" key = {index}>
-                                    <div className = "experience-card" >
-                                        <div className = "card-top">
-                                            <img className = "card-image" src = {experience.mainImage} alt = "card-image"/>
-                                            
-                                        </div>
-                                        <div className = "card-bottom">
-                                            <div className = "experience-title">{experience.title}</div>
-                                            <div className = "type">Experience Type : {experience.type}</div>
-                                            <div className = "position">Role : {experience.position}</div>
-                                            <div className = "time">{experience.time}</div>
-                                        </div>
-                                        <div className = "view-more-button" onClick = {() => showPopup(true, experience.id)}>View More</div>
-                                    </div>
-                                    
-                                </SwiperSlide>
-                            )}               
-                        </Swiper> */}
+                
                         <Swiper
                             pagination={{
                             dynamicBullets: true,
@@ -152,7 +131,6 @@ function Experience({coba}) {
                                 <SwiperSlide className = "swiper-slide" key = {index}>
                                     <div className="exp-card">
                                         <div className="card-left">
-                                            {/* <img className = "exp-img" src = {experience.mainImage} alt = "card-image"/> */}
                                             <Swiper
                                                 className="mySwiper swiper-h"
                                                 spaceBetween={50}
@@ -192,37 +170,6 @@ function Experience({coba}) {
                     </div>
                 </Fade>
 
-                {/* <Popup trigger = {buttonPopup} setTrigger = {setButtonPopup}>
-                    
-                    {experiences.map((experience, index) =>{
-                            if(experience.id === activeExp){
-                                return(
-                                    <div key = {index} className = "exp-detail-container">
-                                        <h4>{experience.title}</h4>
-                                        <Swiper
-                                            pagination={{
-                                                "dynamicBullets": true
-                                            }}
-                                            loop = {true}
-                                            autoHeight={true}
-                                        >
-                                            {experience.images.map((image, index) => 
-                                                <SwiperSlide key = {index} >
-                                                    
-                                                    <img src = {image} className = "detail-img" alt = "detailimage" />
-                                                </SwiperSlide>
-                                            )}
-                                        </Swiper>
-                                        <div className = "exp-detail">{experience.detail}</div>
-                                    </div>
-                                )
-                            }
-                        }         
-                    )}
-                    
-                </Popup>     */}
-
-                
             </div>
 
             <div id = "experience-detail">
@@ -234,111 +181,3 @@ function Experience({coba}) {
 }
 
 export default Experience
-
-
-
-/*
-<div key = {index} className = "experience-card" onClick = {coba}>
-                                <div className = "card-left">
-                                    <Carousel 
-                                        value = {value}
-                                        slides = {experience.images}
-                                        onChange = {e => setValue}
-                                    />
-                                    <Dots number={experience.images.length} thumbnails={experience.images} value={value} onChange={e => setValue} number={experience.images.length} />
-                                </div>
-                                <div className = "card-right">
-                                    <div className = "experience-title">{experience.title}</div>
-                                    <div className = "type">{experience.type}</div>
-                                    <div className = "position">{experience.position}</div>
-                                    <div className = "time">{experience.time}</div>
-                                    <div className = "detail">{experience.detail}</div>
-                                </div>
-                                
-                            </div>
-                        */
-
-/*
-<Carousel
-                                plugins={[
-                                    'arrows',
-                                    'infinite'
-                                ]}
-                            >
-                                <img src = {Genose2} alt = "image"/>
-                                <img src = {Genose2} alt = "image"/>
-                                <img src = {Genose2} alt = "image"/>
-                        </Carousel>
-
-                        <Carousel
-                                plugins={[
-                                    'arrows',
-                                    'infinite'
-                                ]}
-                            >
-                                <img src = {Neurafarm1} alt = "image"/>
-                                <img src = {Neurafarm2} alt = "image"/>
-                                <img src = {Neurafarm3} alt = "image"/>
-                        </Carousel>
-
-                        <Carousel
-                                plugins={[
-                                    'arrows',
-                                    'infinite'
-                                ]}
-                            >
-                                <img src = {SO7} alt = "image"/>
-                                <img src = {SO7} alt = "image"/>
-                                <img src = {SO7} alt = "image"/>
-                        </Carousel>
-*/
-
-/*
-{experiences[0].images.map((image, index) =>                    
-                            <img className = "card-image" src = {image} alt = "card-image"/>                                                    
-                        )} 
-*/
-
-/* <Carousel
-                                        plugins={[
-                                            'arrows',
-                                            'infinite'
-                                        ]}
-                                    >
-                                        {experience.images.map((image, index) =>                    
-                                            <img key = {index} className = "card-image" src = {image} alt = "card-image"/>                                                    
-                                        )} 
-                                    </Carousel> */
-                                    /* <Carousel
-                                        value={1}
-                                        slides={experience.images}
-                                        onChange={() => setValue(value)}
-                                    />
-                                    <Dots number={experience.images.length} thumbnails={experience.images} value={value} onChange={() => setValue(value)} number={experience.images} /> */
-
-/*
-
-<Carousel
-                        plugins={[
-                            'arrows',
-                            'infinite'
-                        ]}
-                    >
-                        {experiences.map((experience, index) => 
-                            <div key = {index} className = "experience-card" >
-                                <div className = "card-top">
-                                    <img className = "card-image" src = {experience.mainImage} alt = "card-image"/>
-                                    
-                                </div>
-                                <div className = "card-bottom">
-                                    <div className = "experience-title">{experience.title}</div>
-                                    <div className = "type">Experience Type : {experience.type}</div>
-                                    <div className = "position">Role : {experience.position}</div>
-                                    <div className = "time">{experience.time}</div>
-                                     <div className = "detail">{experience.detail}</div>
-                                    </div>
-                                    <div className = "view-more-button" onClick = {() => setButtonPopup(true)}>View More</div>        
-                                </div>
-                  
-                            )}                  
-                        </Carousel>*/

@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
-// import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMobile } from "@fortawesome/free-solid-svg-icons"
 import { faObjectGroup } from "@fortawesome/free-solid-svg-icons"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
 import {faBook} from "@fortawesome/free-solid-svg-icons"

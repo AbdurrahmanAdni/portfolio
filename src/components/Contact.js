@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import emailjs from 'emailjs-com';
 import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -8,10 +8,12 @@ import "../styles/scss/Contact.css"
 
 function Contact() {
 
+    const form = useRef();
+
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_m0488uj', 'template_xf9ni1y', e.target, 'user_x3PP29Nwe3WKyZuffuWlM')
+        emailjs.sendForm('service_ii5cmgb', 'template_dgwq1n9', e.target, '_8B2ZDfuHoG_xJk8P')
             .then((result) => {
                 console.log(result.text);
                 alert("Message Sent. Thankyou very much :)")
@@ -27,7 +29,7 @@ function Contact() {
             <div className = "contact-container">
                 <Fade right>
                     <h2 className = "contact-title">Contact Me</h2>
-                    <form className = "form-container" onSubmit = {sendEmail}>
+                    <form ref={form} className = "form-container" onSubmit = {sendEmail}>
                         <div className = "input name">
                             <div className = "input-left">
                                 <FontAwesomeIcon icon = {faUser} className = "input-icon" />

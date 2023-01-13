@@ -39,10 +39,6 @@ import TA4 from "../images/TA-4.png"
 import TA5 from "../images/TA-5.png"
 import TA6 from "../images/TA-6.png"
 
-import biofarma1 from "../images/biofarma-1.jpeg"
-import biofarma2 from "../images/biofarma-1.jpeg"
-import biofarma3 from "../images/biofarma-1.jpeg"
-
 SwiperCore.use([Navigation, Pagination])
 
 function Experience({coba}) {
@@ -102,18 +98,7 @@ function Experience({coba}) {
             images : [TA1, TA2, TA3, TA4, TA5, TA6],
             detail : "Final project as a software engineer student. Built an interaction design for online-based exam software using Figma and Iconify.",
             site : "https://www.figma.com/proto/gCHOFCm7w01TPeCcS6xaDJ/High-fidelity-2.0?node-id=14%3A677&starting-point-node-id=14%3A677&scaling=scale-down"
-        },
-        {
-            id : "biofarma",
-            title: "Biofarma",
-            type : "Fulltime",
-            position : ["Frontend Engineer"],
-            time : "July 2022 - Sept 2022",
-            mainImage : TA1,
-            images : [biofarma1, biofarma2, biofarma3],
-            detail : "Built and developed a web-based dashboard for monitoring and reporting vaccine production (specifically in quality control and quality assurance). Developed using Reactjs.",
-            site : null
-        },
+        }
     ]);
 
     const [buttonPopup, setButtonPopup] = useState(false);

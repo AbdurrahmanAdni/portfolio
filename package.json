@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",
-    "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -16,13 +15,13 @@
     "emailjs-com": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-particles-js": "^3.5.1",
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
-    "react-tsparticles": "^2.7.1",
+    "react-tsparticles": "^1.29.2",
     "react-typed": "^1.2.0",
     "swiper": "^6.7.5",
-    "tsparticles": "^2.7.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

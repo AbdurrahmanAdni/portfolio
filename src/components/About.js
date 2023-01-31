@@ -34,8 +34,8 @@ function About() {
                             
                             Personally, i love learning new things.
                             
-                            As for my hobbies, I like doing some sports. Specifically playing football, futsal, and basketball. 
-                            Very unsuitable for a software engineer hahaha.
+                            As for my hobbies, I like doing some sports. Especially football, futsal, and basketball. 
+                            Very unsuitable for a software engineer =)) .
                         </div>
                     </div>
                 </div>

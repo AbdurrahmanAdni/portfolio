@@ -18,7 +18,7 @@ function Services() {
         },
         {
             name: "UI/UX Design",
-            detail : "Had taken role as a UI/UX designer in two projects. I also choose UI/UX research as my final project in my last year of college.",
+            detail : "Had taken role as a UI/UX designer in two projects. I also choose UI/UX research as my final project in my last college year.",
             icon : faObjectGroup
 
         },
